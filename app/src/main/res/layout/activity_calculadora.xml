@@ -301,7 +301,7 @@
         android:text="Calcular Promedio" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonMejoresPromedios"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"

@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".mejoresPromedios"
+            android:name=".mejores_promedios"
             android:label="@string/title_activity_mejores_promedios"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".Calculadora">

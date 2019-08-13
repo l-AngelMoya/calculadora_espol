@@ -1,10 +1,13 @@
 package com.example.calculadora_espol;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import com.example.calculadora_espol.Promedio;
 
 public class Calculadora extends AppCompatActivity {
     private EditText editTextPorcentajeTeorico;
@@ -28,6 +31,16 @@ public class Calculadora extends AppCompatActivity {
         editTextPractica = (EditText) findViewById(R.id.editTextPractica);
         textViewEstado = (TextView) findViewById(R.id.textViewEstado);
         textViewPromedio = (TextView) findViewById(R.id.textViewPromedio);
+
+        Button btnMejoresPromedios=(Button) findViewById(R.id.buttonMejoresPromedios);
+        btnMejoresPromedios.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(Calculadora.this,mejores_promedios.class);
+                Calculadora.this.startActivity(intent);
+            }
+        });
+        //https://androidstudiofaqs.com/tutoriales/como-lanzar-un-segundo-activity-en-android-studio
     }
 
     public void llenarPorcentajePractica(View v){
